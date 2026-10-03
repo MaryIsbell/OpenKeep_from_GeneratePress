@@ -106,14 +106,6 @@ function ok_construct_header() {
             'label' => 'Editorial Team',
             'url'   => home_url( '/editorial-team/' ),
         ),
-        array(
-            'label' => 'Policies',
-            'url'   => home_url( '/policies/' ),
-        ),
-        array(
-            'label' => 'Contact',
-            'url'   => home_url( '/contact/' ),
-        ),
     );
     ?>
     <header class="ok-site-header">
