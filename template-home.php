@@ -13,8 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // TODO: replace with the real hero video once it's ready.
-$hero_video_url  = '';
-$hero_poster_url = '';
+// The ID is the part of a YouTube link after "youtu.be/" or "watch?v=".
+$hero_youtube_id = 'G1MpsXM3tPw';
 
 $accordion_items = array(
 	array(
@@ -65,12 +65,15 @@ get_header();
 						<h1 class="ok-hero-heading">Welcome to OpenKeep!</h1>
 						<p class="ok-subhead">The Free, Open Source, Academic Publisher</p>
 
-						<video class="ok-video-frame" controls
-							<?php echo $hero_poster_url ? 'poster="' . esc_url( $hero_poster_url ) . '"' : ''; ?>>
-							<?php if ( $hero_video_url ) : ?>
-								<source src="<?php echo esc_url( $hero_video_url ); ?>" type="video/mp4">
-							<?php endif; ?>
-						</video>
+						<?php if ( $hero_youtube_id ) : ?>
+							<div class="ok-video-frame">
+								<iframe src="<?php echo esc_url( 'https://www.youtube-nocookie.com/embed/' . $hero_youtube_id . '?rel=0' ); ?>"
+									title="Welcome to OpenKeep"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen></iframe>
+							</div>
+						<?php endif; ?>
 						<p class="ok-read-transcript"><a href="#">Read transcript</a></p>
 
 						<?php foreach ( $accordion_items as $item ) : ?>
