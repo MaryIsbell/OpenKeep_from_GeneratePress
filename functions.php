@@ -76,6 +76,12 @@ function ok_footer_copyright( $copyright ) {
     return '';
 }
 
+// Pages put their own <h1> in the hero section, so never print GeneratePress's title.
+add_filter( 'generate_show_title', 'ok_hide_page_titles' );
+function ok_hide_page_titles( $show ) {
+    return is_page() ? false : $show;
+}
+
 // Header: logo left, nav right, replacing GeneratePress's own header markup entirely.
 // Runs on after_setup_theme (not immediately) so GeneratePress has already registered
 // generate_construct_header before we try to remove it.
