@@ -38,6 +38,11 @@ function ok_child_enqueue_assets() {
 
     // Enqueue Mobile Nav Toggle Script
     wp_enqueue_script( 'ok-nav-toggle', get_stylesheet_directory_uri() . '/nav-toggle.js', array(), '1.0.0', true );
+
+    // Enqueue Accordion Animation Script (Home page only)
+    if ( is_page_template( 'template-home.php' ) ) {
+        wp_enqueue_script( 'ok-accordion', get_stylesheet_directory_uri() . '/accordion.js', array(), '1.0.0', true );
+    }
 }
 
 // Footer: social icon row + copyright, shared across every page via GeneratePress's own footer hooks.

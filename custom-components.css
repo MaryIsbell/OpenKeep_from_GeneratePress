@@ -246,47 +246,6 @@ body.page-template-template-home .ok-section-navy {
     cursor: pointer;
 }
 
-/* Smooth open/close. The height animation works in browsers that support
-   interpolate-size (Chrome/Edge); every browser gets the fade-in below. */
-.ok-accordion-item {
-    interpolate-size: allow-keywords;
-}
-
-.ok-accordion-item::details-content {
-    block-size: 0;
-    overflow: hidden;
-    transition: block-size 0.35s ease, content-visibility 0.35s allow-discrete;
-}
-
-.ok-accordion-item[open]::details-content {
-    block-size: auto;
-}
-
-.ok-accordion-item[open] > p {
-    animation: ok-accordion-fade 0.35s ease;
-}
-
-@keyframes ok-accordion-fade {
-    from {
-        opacity: 0;
-        transform: translateY(-4px);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .ok-accordion-item::details-content {
-        transition: none;
-    }
-
-    .ok-accordion-item[open] > p {
-        animation: none;
-    }
-}
-
 /* Home: "Trusted by Academic Leaders" heading above the carousel */
 .ok-section-heading {
     margin-top: 4rem;
