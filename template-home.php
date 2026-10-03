@@ -74,7 +74,6 @@ get_header();
 									allowfullscreen></iframe>
 							</div>
 						<?php endif; ?>
-						<p class="ok-read-transcript"><a href="#">Read transcript</a></p>
 
 						<?php foreach ( $accordion_items as $item ) : ?>
 							<details class="ok-accordion-item">
