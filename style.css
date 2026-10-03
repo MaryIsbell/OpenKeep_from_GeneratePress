@@ -1,0 +1,47 @@
+/*
+ Theme Name:   OpenKeep from GeneratePress
+ Description:  Custom child theme for OpenKeep. Includes Splide.js for home page carousels.
+ Author:       Mary Isbell
+ Template:     generatepress
+ Version:      1.0.0
+*/
+
+:root {
+    /* Brand Colors */
+    --ok-blue: #414f7c;
+    --ok-orange-main: #f89a32;
+    
+    /* Orange Gradient Scale */
+    --ok-orange-1: #f5aa53;
+    --ok-orange-2: #f6b56e;
+    --ok-orange-3: #f7cb99;
+    --ok-orange-4: #f6e3cd;
+    --ok-orange-5: #fddec0;
+
+    /* Typography */
+    --ok-font-heading: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    --ok-font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--ok-font-body);
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ok-font-heading);
+    color: var(--ok-blue);
+    font-weight: bold;
+}
+
+/* Custom Button Style */
+.button.ok-orange {
+    background-color: var(--ok-orange-main);
+    color: #ffffff;
+}
+
+.button.ok-orange:hover {
+    background-color: var(--ok-orange-1);
+    color: #ffffff;
+}

@@ -1,0 +1,282 @@
+/* Site Header: logo left, nav right */
+.ok-site-header {
+    background-color: #ffffff;
+    padding: 1.25rem 1.5rem 0rem
+}
+
+.ok-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ok-header-logo img {
+    display: block;
+    max-height: 70px;
+    width: auto;
+}
+
+.ok-header-logo-text {
+    font-family: var(--ok-font-heading);
+    color: var(--ok-blue);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.ok-header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.ok-nav-pill {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border: 2px solid var(--ok-orange-main);
+    border-radius: 999px;
+    color: var(--ok-orange-main);
+    font-family: var(--ok-font-heading);
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ok-nav-pill:hover {
+    background-color: var(--ok-orange-main);
+    color: #ffffff;
+}
+
+.ok-nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.ok-nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--ok-blue);
+    border-radius: 2px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.ok-nav-toggle.is-active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.ok-nav-toggle.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ok-nav-toggle.is-active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .ok-nav-toggle {
+        display: flex;
+    }
+
+    .ok-header-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ok-header-nav.is-open {
+        display: flex;
+    }
+
+    .ok-nav-pill {
+        text-align: center;
+    }
+}
+
+/* Footer Social Icons */
+.ok-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.ok-social-icons img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+/* Carousel Card Styles */
+.ok-carousel-card {
+    background-color: var(--ok-orange-main);
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.ok-carousel-card:hover {
+    transform: scale(1.02);
+}
+
+.ok-carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark Navy Section Background (used by Home, About, Editorial Team, etc.) */
+.ok-section-navy {
+    background-color: var(--ok-blue);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/*Adds some spacing between the top of the page and the first navy section on the Home page*/
+body.page-template-template-home .ok-section-navy {
+    margin-top: 40px;
+}
+
+/* Keeps actual content readable-width and centered inside a full-bleed section */
+.ok-content-constrained {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.ok-section-navy h1,
+.ok-section-navy h2,
+.ok-section-navy h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.ok-subhead {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Editorial Team Card Styles */
+.ok-team-photo {
+    aspect-ratio: 3 / 3.4;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ok-team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ok-team-name {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.75rem 0 0.15rem;
+}
+
+.ok-team-role {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+}
+
+/* Home: Hero Video Frame */
+.ok-video-frame {
+    border: 2px solid var(--ok-orange-main);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ok-video-frame video {
+    display: block;
+    width: 100%;
+}
+
+.ok-read-transcript {
+    color: #ffffff;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+}
+
+/* Home: Accordion (Who we are / What we do / Why we do it) */
+.ok-accordion-item {
+    background-color: #ffffff;
+    border-radius: 6px;
+    max-width: 600px;
+    padding: 0.75rem 1.25rem;
+    margin: 0 auto 0.75rem;
+}
+
+.ok-accordion-item summary {
+    color: var(--ok-blue);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Home: Testimonial Cards (used inside the Splide carousel) */
+.ok-testimonial-card {
+    background-color: var(--ok-orange-main);
+    border-radius: 8px;
+    min-height: 280px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ok-testimonial-quote {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin: 0 0 1.5rem;
+}
+
+.ok-testimonial-name {
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ok-testimonial-role {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+body.separate-containers.no-sidebar .site-main {
+    margin-top: 0;
+    margin-bottom: 0;
+}
