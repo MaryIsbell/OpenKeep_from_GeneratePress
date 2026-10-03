@@ -23,7 +23,7 @@ $accordion_items = array(
 	),
 	array(
 		'summary' => 'How we do it',
-		'body'    => 'High-quality educational resources are not free to produce or publish; we are able to give them away for free because we have woven OpenKeep into the curriculum at The University of New Haven. Students from any major interested in the publishing industry get hands-on experience with all stages of the publication process while bringing their expertise to the creation of engaging materials. Through a practicum offered by the English department, the editorial team works with faculty authors to produce resources that encourage students to engage.',
+		'body'    => 'High-quality educational resources are not free to produce or publish; we are able to give them away for free because we have woven OpenKeep into the curriculum at The University of New Haven. Students from any major interested in the publishing industry get hands-on experience with all stages of the publication process while bringing their expertise to the creation of engaging materials. Through a practicum offered by the English department, the editorial team works with faculty authors to produce resources that encourage genuine engagement from students.',
 	),
 	array(
 		'summary' => 'What can we accomplish?',
@@ -46,6 +46,11 @@ $testimonials = array(
 		'quote' => 'I have been writing a textbook for years. The OpenKeep team has helped me to finally get it published. They have been incredibly helpful and supportive throughout the entire process.',
 		'name'  => 'Mark Tavern',
 		'role'  => 'Assistant Professor of Practice, Music; Coordinator, B.A. in Music Industry',
+	),
+	array(
+		'quote' => 'Another testimonial quote goes here. This is a placeholder for now.',
+		'name'  => 'Professor Name',
+		'role'  => 'Assistant Professor, Discipline',
 	),
 );
 
