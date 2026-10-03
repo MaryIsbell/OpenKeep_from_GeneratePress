@@ -176,6 +176,7 @@ body.page-template-template-home .ok-section-navy {
     color: #ffffff;
     text-align: center;
     font-size: 0.9rem;
+    margin-bottom: 2.5rem;
 }
 
 /* Editorial Team Card Styles */
@@ -234,6 +235,7 @@ body.page-template-template-home .ok-section-navy {
     font-size: 0.85rem;
     text-decoration: underline;
     margin-top: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 /* Home: Accordion (Who we are / What we do / Why we do it) */
@@ -242,13 +244,19 @@ body.page-template-template-home .ok-section-navy {
     border-radius: 6px;
     max-width: 600px;
     padding: 0.75rem 1.25rem;
-    margin: 0 auto 0.75rem;
+    margin: 0 auto 1rem;
 }
 
 .ok-accordion-item summary {
     color: var(--ok-blue);
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Home: "Trusted by Academic Leaders" heading above the carousel */
+.ok-section-heading {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 /* Home: Testimonial Cards (used inside the Splide carousel) */
