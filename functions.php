@@ -12,6 +12,14 @@ function ok_child_theme_support() {
     add_theme_support( 'appearance-tools' );
 }
 
+// Favicon: hardcoded to the theme's icon, replacing any Site Icon set in the Customizer.
+remove_action( 'wp_head', 'wp_site_icon', 99 );
+add_action( 'wp_head', 'ok_site_icon' );
+function ok_site_icon() {
+    $icon = get_stylesheet_directory_uri() . '/images/OpenKeep_Icon.svg';
+    echo '<link rel="icon" type="image/svg+xml" href="' . esc_url( $icon ) . '">' . "\n";
+}
+
 add_action( 'wp_enqueue_scripts', 'ok_child_enqueue_assets' );
 function ok_child_enqueue_assets() {
     // Enqueue Parent Theme
@@ -106,11 +114,7 @@ function ok_construct_header() {
         <div class="ok-header-inner">
             <div class="ok-header-logo">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <?php if ( has_custom_logo() ) : ?>
-                        <?php the_custom_logo(); ?>
-                    <?php else : ?>
-                        <span class="ok-header-logo-text"><?php bloginfo( 'name' ); ?></span>
-                    <?php endif; ?>
+                    <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/OpenKeep_Logo.svg' ); ?>" alt="OpenKeep">
                 </a>
             </div>
             <button class="ok-nav-toggle" aria-expanded="false" aria-controls="ok-primary-nav" aria-label="<?php esc_attr_e( 'Toggle menu', 'openkeep' ); ?>">
