@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 768:  { perPage: 1 },
             },
             autoplay: true,
-            interval: 3000,
+            interval: 5000,
+            speed: 1000,
+            pauseOnHover: true,
+            pauseOnFocus: true,
             arrows: true,
             pagination: false,
         }).mount();
