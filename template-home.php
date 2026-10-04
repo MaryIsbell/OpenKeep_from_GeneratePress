@@ -19,14 +19,14 @@ $hero_youtube_id = 'G1MpsXM3tPw';
 $accordion_items = array(
 	array(
 		'summary' => 'What we do',
-		'body'    => 'Our goal at OpenKeep is to create a clear path into academia. We do this by publishing Open Educational Resources (OER) authored by faculty, edited by students, and given away for free. OER can include any type of educational resource, from syllabi to full courses. ',
+		'body'    => 'We publish open educational resources (OER) authored by faculty, edited by students, and given away for free. OER can include any type of educational resource, from syllabi to full courses. ',
 	),
 	array(
 		'summary' => 'How we do it',
 		'body'    => 'High-quality educational resources are not free to produce or publish; we are able to give them away for free because we have woven OpenKeep into the curriculum at The University of New Haven. Students from any major interested in the publishing industry get hands-on experience with all stages of the publication process while bringing their expertise to the creation of engaging materials. Through a practicum offered by the English department, the editorial team works with faculty authors to produce resources that encourage genuine engagement from students.',
 	),
 	array(
-		'summary' => 'What can we accomplish?',
+		'summary' => 'Many possibilities',
 		'body'    => 'OER aren’t just free to access; they are openly licensed, which means that they can be modified and redistributed by users. We design OER with iteration and adaptation in mind. We have published open editions of historic texts that grow each semester with student-authored annotations and collaborative glossaries refined each time they are used in the classroom.',
 	),
 );
@@ -38,12 +38,12 @@ $testimonials = array(
 		'role'  => 'Professor of Practice, English',
 	),
 	array(
-		'quote' => 'Working with the OpenKeep editorial team has been a wonderful experience. The students are professional, responsive, and thoughtful in their work. I have been impressed with their ability to take my ideas and turn them into a polished product that is ready for publication.',
+		'quote' => 'Here is why I wanted to work with OpenKeep.',
 		'name'  => 'Danielle Cooper',
 		'role'  => 'Professor, Criminal Justice',
 	),
 	array(
-		'quote' => 'I have been writing a textbook for years. The OpenKeep team has helped me to finally get it published. They have been incredibly helpful and supportive throughout the entire process.',
+		'quote' => 'And here is why I wanted to work with OpenKeep.',
 		'name'  => 'Mark Tavern',
 		'role'  => 'Assistant Professor of Practice, Music; Coordinator, B.A. in Music Industry',
 	),
