@@ -38,19 +38,15 @@ $testimonials = array(
 		'role'  => 'Professor of Practice, English',
 	),
 	array(
-		'quote' => 'Here is why I wanted to work with OpenKeep.',
+		'quote' => 'With open education resources, my students come to class on day one without concerns about affording or accessing the book. Working with OpenKeep has allowed me to prepare high-quality materials at no cost to the student, which allows me to challenge them academically while providing the necessary supports.',
 		'name'  => 'Danielle Cooper',
 		'role'  => 'Professor, Criminal Justice',
 	),
+	
 	array(
-		'quote' => 'And here is why I wanted to work with OpenKeep.',
-		'name'  => 'Mark Tavern',
-		'role'  => 'Assistant Professor of Practice, Music; Coordinator, B.A. in Music Industry',
-	),
-	array(
-		'quote' => 'Another testimonial quote goes here. This is a placeholder for now.',
-		'name'  => 'Professor Name',
-		'role'  => 'Assistant Professor, Discipline',
+		'quote' => 'Why do I appreciate OER? Because saving students money while being free to tailor a course to our curricular needs is a win-win.',
+		'name'  => 'Yevgeniya Rivers',
+		'role'  => 'Associate Professor of Practice; Director of Math Zone',
 	),
 );
 
