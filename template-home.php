@@ -38,7 +38,7 @@ $testimonials = array(
 		'role'  => 'Professor of Practice, English',
 	),
 	array(
-		'quote' => 'With open education resources, my students come to class on day one without concerns about affording or accessing the book. Working with OpenKeep has allowed me to prepare high-quality materials at no cost to the student, which allows me to challenge them academically while providing the necessary supports.',
+		'quote' => 'With open educational resources, my students come to class on day one without concerns about affording or accessing the book. Working with OpenKeep has allowed me to prepare high-quality materials at no cost to the student, which allows me to challenge them academically while providing the necessary supports.',
 		'name'  => 'Danielle Cooper',
 		'role'  => 'Professor, Criminal Justice',
 	),
