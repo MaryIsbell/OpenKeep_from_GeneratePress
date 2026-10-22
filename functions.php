@@ -51,12 +51,12 @@ function ok_social_icons_row() {
     $socials = array(
         array(
             'label' => 'Instagram',
-            'url'   => '#', // TODO: replace with real Instagram URL.
+            'url'   => 'https://www.instagram.com/openkeeppublish/',
             'icon'  => 'openkeep_ig.svg',
         ),
         array(
             'label' => 'LinkedIn',
-            'url'   => '#', // TODO: replace with real LinkedIn URL.
+            'url'   => 'https://www.linkedin.com/company/openkeep/',
             'icon'  => 'openkeep_li.svg',
         ),
         array(
