@@ -61,7 +61,7 @@ function ok_social_icons_row() {
         ),
         array(
             'label' => 'YouTube',
-            'url'   => '#', // TODO: replace with real YouTube URL.
+            'url'   => 'https://www.youtube.com/@OpenKeepVideos',
             'icon'  => 'openkeep_yt.svg',
         ),
     );
